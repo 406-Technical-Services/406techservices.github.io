@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><title>Support Request - 406 Technical Services</title><link rel="stylesheet" href="styles.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <title>Support Request - 406 Technical Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-
   <header style="background: url('images/mountains.jpg') no-repeat center center; background-size: cover; color: white; padding: 1rem 0;">
     <div style="display: flex; align-items: center; max-width: 1200px; margin: 0 auto;">
       <img src="images/logo.png" alt="406 Technical Services Logo" style="height: 60px; margin-right: 20px;">
@@ -21,12 +24,14 @@
     </div>
   </header>
 
-<header><a href="index.html">← Back to Home</a><h1>Support Request</h1></header>
-  <main>
-    <form name="support-form" method="POST" data-netlify="true">
-      <label>Your Name: <input type="text" name="name" required></label><br>
-      <label>Email: <input type="email" name="email" required></label><br>
-      <label>Issue Description:<br><textarea name="issue" required></textarea></label><br>
+  <main style="max-width: 960px; margin: 2rem auto; color: #fff; background-color: #001f3f; padding: 2rem; border-radius: 8px;">
+    <h2>Support Request</h2>
+    <form action="https://formsubmit.co/support@406techservices.com" method="POST">
+      <label>Your Name:<br><input type="text" name="name" required></label><br><br>
+      <label>Email:<br><input type="email" name="email" required></label><br><br>
+      <label>Issue Description:<br><textarea name="issue" rows="5" required></textarea></label><br><br>
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_next" value="https://www.406techservices.com/thank-you.html">
       <button type="submit">Submit Request</button>
     </form>
   </main>
@@ -34,6 +39,5 @@
   <footer style="background-color: #001733; color: white; text-align: center; padding: 1rem 0;">
     <p>&copy; 2025 406 Technical Services</p>
   </footer>
-
 </body>
 </html>
