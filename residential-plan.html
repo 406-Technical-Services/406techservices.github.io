@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Residential Support Plan | 406 Technical Services</title>
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="description" content="Simple monthly residential tech support from 406 Technical Services — one in‑home visit, quick phone/text help, and remote troubleshooting.">
+</head>
+<body>
+  <div class="container">
+    <header class="header" role="banner">
+      <img src="./assets/406TS_Logo_Transparent.png" alt="406 Technical Services logo" />
+      <div>
+        <h1 style="margin:0;font-size:1.5rem;">406 Technical Services</h1>
+        <div style="color:#475569">Trusted technology help for Seeley Lake and beyond</div>
+      </div>
+    </header>
+    <section class="plan-wrapper" aria-labelledby="residential-plan">
+  <style>
+    .plan-wrapper {
+      --brand: #1f6feb;
+      --ink: #0f172a;
+      --muted: #475569;
+      --bg: #ffffff;
+      --line: #e2e8f0;
+      --success: #16a34a;
+      --warn: #ea580c;
+      color: var(--ink);
+      padding: 2rem 1rem;
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    }
+    .plan { max-width: 960px; margin: 0 auto; background: var(--bg); border: 1px solid var(--line); border-radius: 16px; overflow: clip; box-shadow: 0 6px 24px rgba(2, 6, 23, 0.06); }
+    .plan-header { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: center; padding: 1.5rem 1.5rem 0.75rem; border-bottom: 1px solid var(--line); }
+    .plan-title { margin: 0; font-size: clamp(1.25rem, 2vw + 1rem, 1.75rem); line-height: 1.2; }
+    .price { font-weight: 700; color: var(--brand); font-size: clamp(1.25rem, 2vw + 1rem, 1.75rem); }
+    .subtitle { margin: 0.25rem 0 0.5rem; color: var(--muted); font-size: 0.975rem; }
+    .plan-body { display: grid; grid-template-columns: 1fr; gap: 1.25rem; padding: 1rem 1.5rem 1.5rem; }
+    @media (min-width: 900px) { .plan-body { grid-template-columns: 1.1fr 0.9fr; } }
+    .card { border: 1px solid var(--line); border-radius: 12px; padding: 1rem; background: #fff; }
+    .card h3 { margin: 0 0 0.5rem; font-size: 1.06rem; }
+    ul.checks, ul.xlist { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; }
+    .checks li, .xlist li { display: grid; grid-template-columns: 24px 1fr; align-items: start; gap: 0.5rem; font-size: 0.98rem; }
+    .checks svg { color: var(--success); } .xlist svg { color: var(--warn); }
+    .muted { color: var(--muted); }
+    .cta { display: grid; gap: 0.75rem; padding: 1rem; border: 1px dashed var(--line); border-radius: 12px; background: #f8fafc; }
+    .cta a.button { display: inline-block; text-align: center; text-decoration: none; border-radius: 999px; padding: 0.75rem 1.1rem; font-weight: 700; border: 1px solid var(--brand); color: #fff; background: var(--brand); }
+    .cta a.button.secondary { background: #fff; color: var(--brand); }
+    details { border: 1px solid var(--line); border-radius: 12px; padding: 0.75rem 1rem; background: #fff; }
+    details + details { margin-top: 0.5rem; } summary { cursor: pointer; font-weight: 600; }
+    .fineprint { font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 0.75rem; margin-top: 0.75rem; }
+  </style>
+
+  <div class="plan" role="region" aria-label="Residential Support Plan">
+    <header class="plan-header">
+      <div>
+        <h2 id="residential-plan" class="plan-title">Residential Support Plan</h2>
+        <p class="subtitle">Simple monthly tech help for your home — no surprises, no pressure.</p>
+      </div>
+      <div class="price">$50<span class="muted" style="font-weight:500">/month</span></div>
+    </header>
+
+    <div class="plan-body">
+      <div class="card">
+        <h3>What you get</h3>
+        <ul class="checks" aria-label="Included features">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg><span><strong>1 in‑home visit per month</strong> (up to 1 hour)</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg><span><strong>Phone/text support</strong> for quick questions (10–15 min per issue)</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg><span><strong>Remote troubleshooting</strong> for minor fixes (up to 30 min per incident)</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg><span><strong>Business hours</strong> support: Mon–Fri, 9am–5pm (excluding holidays)</span></li>
+        </ul>
+        <p class="muted" style="margin-top:0.75rem"><strong>Good for:</strong> Wi‑Fi hiccups, smart TV help, printer issues, email/app glitches, device setup, and general “make it work” support.</p>
+        <div class="cta" role="group" aria-label="Get started">
+          <a class="button" href="https://www.406techservices.com/booking.html">Book your first visit</a>
+          <a class="button secondary" href="tel:14062098814">Call 406‑209‑8814</a>
+          <div class="muted">Questions? <a href="mailto:seeleylake@406techservices.com">seeleylake@406techservices.com</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>What’s not included</h3>
+        <ul class="xlist" aria-label="Not included in plan">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m18.3 5.71-12.6 12.6 1.41 1.41 12.6-12.6z"/><path d="M6.11 5.7 4.7 7.11l12.6 12.6 1.41-1.41z"/></svg><span>Major projects (network rebuilds, data recovery, complex installs)</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m18.3 5.71-12.6 12.6 1.41 1.41 12.6-12.6z"/><path d="M6.11 5.7 4.7 7.11l12.6 12.6 1.41-1.41z"/></svg><span>Hardware purchases or replacement parts</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m18.3 5.71-12.6 12.6 1.41 1.41 12.6-12.6z"/><path d="M6.11 5.7 4.7 7.11l12.6 12.6 1.41-1.41z"/></svg><span>More than one in‑home visit per month</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m18.3 5.71-12.6 12.6 1.41 1.41 12.6-12.6z"/><path d="M6.11 5.7 4.7 7.11l12.6 12.6 1.41-1.41z"/></svg><span>After‑hours or holiday support (available at after‑hours rates)</span></li>
+        </ul>
+        <details style="margin-top:0.75rem">
+          <summary>Need more help this month?</summary>
+          <div class="muted" style="margin-top:0.5rem">
+            Extra in‑home time billed at <strong>$75/hour</strong>.<br/>
+            First‑visit special: <strong>$60 (1 hour)</strong>. Two‑hour in‑home: <strong>$125</strong>.<br/>
+            Project work (migrations, new phone systems, full Wi‑Fi rework) is quoted separately.
+          </div>
+        </details>
+        <p class="fineprint">
+          Month‑to‑month; cancel anytime by email. No rollover of unused time. “Fair use” applies: the plan covers routine residential support. Excessive or prolonged requests may require additional billing or a different service option.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <footer class="footer" role="contentinfo">
+      © 2025 406 Technical Services • Seeley Lake, Montana • <a href="tel:14062098814">406‑209‑8814</a> • <a href="mailto:seeleylake@406techservices.com">seeleylake@406techservices.com</a>
+    </footer>
+  </div>
+</body>
+</html>
