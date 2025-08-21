@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Training & Tutoring Plans | 406 Technical Services</title>
+  <style>
+    :root{
+      --brand:#1f6feb; --ink:#0f172a; --muted:#555; --line:#ddd; --bg:#fff; --bg2:#f8fafc; --warn:#ea580c; --ok:#16a34a;
+    }
+    /* layout */
+    body{font-family:Arial,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;margin:0;background:var(--bg2);color:var(--ink)}
+    header, footer{background:#fff; padding:1rem; text-align:center; border-bottom:1px solid #ccc}
+    footer{border-top:1px solid #ccc; margin-top:2rem}
+    nav a{color:#fff; text-decoration:underline}
+    /* hero */
+    .hero{padding:1.25rem 0; color:#fff; text-shadow:0 1px 2px rgba(0,0,0,.25)}
+    .hero h1{margin:.25rem 0 0}
+    .hero p{margin:.25rem 0 0}
+    /* cards */
+    .wrap{max-width:1200px; margin:0 auto; padding:1rem}
+    .grid{display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; padding:1rem .5rem}
+    .card{background:var(--bg); border:1px solid var(--line); border-radius:12px; padding:1.25rem; flex:1 1 280px; max-width:360px; box-shadow:0 4px 10px rgba(2,6,23,.06)}
+    .card h2{margin:.2rem 0 .5rem; font-size:1.2rem}
+    .badge{display:inline-block; font-size:.8rem; border-radius:999px; padding:.1rem .5rem; background:#eef2ff; color:#1f3a8a; border:1px solid #c7d2fe}
+    .price{font-size:1.6rem; color:var(--brand); font-weight:800; margin:.2rem 0 .5rem}
+    .per{font-weight:600; color:#64748b; font-size:.95rem}
+    ul{padding-left:1.2rem; margin:.5rem 0; text-align:left}
+    .note{font-size:.92rem; color:var(--muted); margin-top:.5rem}
+    .cta{display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.75rem}
+    .btn{display:inline-block; text-decoration:none; border-radius:999px; padding:.6rem 1rem; font-weight:700; border:1px solid var(--brand); background:var(--brand); color:#fff}
+    .btn.secondary{background:#fff; color:var(--brand)}
+    /* sections */
+    .section{max-width:1100px; margin:0 auto; padding:0 1rem 1.5rem}
+    .section h3{margin:0 0 .5rem}
+    .panel{background:#fff; border:1px solid var(--line); border-radius:12px; padding:1rem 1.25rem; box-shadow:0 4px 10px rgba(2,6,23,.05)}
+    .kicker{font-weight:700; color:#334155; font-size:.95rem; letter-spacing:.02em; text-transform:uppercase}
+    /* not covered */
+    .xlist{list-style:none; padding:0; margin:0; display:grid; gap:.45rem}
+    .xlist li{display:grid; grid-template-columns:22px 1fr; gap:.5rem; align-items:start}
+    .x{color:var(--warn); font-weight:900}
+    /* table */
+    .tablewrap{overflow:auto}
+    table.compare{width:100%; border-collapse:separate; border-spacing:0; border:1px solid var(--line); border-radius:12px; overflow:hidden; background:#fff}
+    .compare th,.compare td{padding:.6rem .75rem; border-bottom:1px solid var(--line); text-align:left; font-size:.95rem}
+    .compare thead th{background:#f8fafc; font-weight:700}
+    .compare tr:last-child td{border-bottom:0}
+    /* dark mode */
+    @media (prefers-color-scheme: dark){
+      body{background:#0b1220;color:#e6eaf2}
+      header,footer{background:#0f172a; border-color:#1f2937}
+      .card,.panel,table.compare{background:#111827; border-color:#1f2937}
+      .note{color:#cbd5e1}
+      .compare thead th{background:#0b1220}
+      nav a{color:#bbdefb}
+    }
+  </style>
+</head>
+<body>
+  <header style="background:url('images/mountains.jpg') no-repeat center center; background-size:cover;">
+    <div class="hero">
+      <img src="images/logo.png" alt="406 Technical Services" style="height:60px">
+      <h1>Training & Tutoring Plans</h1>
+      <p>Friendly, patient coaching for your home tech — delivered around our availability</p>
+      <nav>
+        <div style="text-align:center; margin:1rem 0;">
+          <a href="index.html">Home</a> |
+          <a href="services.html">Services</a> |
+          <a href="faq.html">FAQ</a> |
+          <a href="residential-plan.html">Residential Support Plans</a> |
+          <a href="booking.html">Appointment Booking</a> |
+          <a href="blog.html">Blog</a> |
+          <a href="testimonials.html">Testimonials</a> |
+          <a href="portfolio.html">Portfolio</a> |
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Plan cards -->
+  <div class="wrap">
+    <div class="grid" aria-label="Training & Tutoring options">
+      <!-- Remote Single -->
+      <article class="card" aria-labelledby="remote-single">
+        <span class="badge">Remote • Screen‑share/Phone</span>
+        <h2 id="remote-single">Quick Session</h2>
+        <div class="price">$80 <span class="per">/ 60‑min</span></div>
+        <ul>
+          <li>Great for one goal: photos, email, files, backups, app basics</li>
+          <li>Includes short follow‑up notes or a checklist</li>
+          <li>Subject to availability (M–F, 9–5)</li>
+        </ul>
+        <div class="cta">
+          <a class="btn" href="booking.html">Book Remote</a>
+          <a class="btn secondary" href="tel:14062098814">Call 406‑209‑8814</a>
+        </div>
+        <p class="note">Need 30 minutes? $50 option available at booking.</p>
+      </article>
+
+      <!-- Remote Packs -->
+      <article class="card" aria-labelledby="remote-packs">
+        <span class="badge">Remote • Save with bundles</span>
+        <h2 id="remote-packs">Training Packs</h2>
+        <div class="price">$225 <span class="per">/ 3×60‑min</span></div>
+        <ul>
+          <li>3‑Pack: $225 (save $15)</li>
+          <li>5‑Pack: $360 (save $40)</li>
+          <li>Includes light homework & recap notes</li>
+          <li>Expires in 6 months • Transferable within household</li>
+        </ul>
+        <div class="cta">
+          <a class="btn" href="booking.html">Buy a Pack</a>
+          <a class="btn secondary" href="mailto:seeleylake@406techservices.com">Email Questions</a>
+        </div>
+        <p class="note">Use for recurring topics: photo organization, cloud basics, password managers, etc.</p>
+      </article>
+
+      <!-- In‑Home -->
+      <article class="card" aria-labelledby="inhome">
+        <span class="badge">In‑Home • Local area</span>
+        <h2 id="inhome">In‑Home Training</h2>
+        <div class="price">$110 <span class="per">/ 60‑min</span></div>
+        <ul>
+          <li>Hands‑on help with your devices & Wi‑Fi</li>
+          <li>Up to 2 attendees from same household (+$15/additional)</li>
+          <li>Subject to availability • Travel limits apply</li>
+        </ul>
+        <div class="cta">
+          <a class="btn" href="booking.html">Request Visit</a>
+          <a class="btn secondary" href="tel:14062098814">Call to Schedule</a>
+        </div>
+        <p class="note">After‑hours/weekend by appointment at premium rates.</p>
+      </article>
+
+      <!-- Monthly Coaching -->
+      <article class="card" aria-labelledby="monthly">
+        <span class="badge">Subscription • Best for progress</span>
+        <h2 id="monthly">Monthly Coaching</h2>
+        <div class="price">$129 <span class="per">/ month</span></div>
+        <ul>
+          <li>2× 45‑min remote sessions per month</li>
+          <li>Priority scheduling window</li>
+          <li>Email recap + lightweight “homework” between sessions</li>
+        </ul>
+        <div class="cta">
+          <a class="btn" href="booking.html">Start Coaching</a>
+          <a class="btn secondary" href="mailto:seeleylake@406techservices.com?subject=Monthly%20Coaching">Ask a Question</a>
+        </div>
+        <p class="note">No rollover; cancel anytime (renews on the 1st).</p>
+      </article>
+
+      <!-- Premium Coaching -->
+      <article class="card" aria-labelledby="premium">
+        <span class="badge">Subscription • Most support</span>
+        <h2 id="premium">Premium Coaching</h2>
+        <div class="price">$179 <span class="per">/ month</span></div>
+        <ul>
+          <li>3× 45‑min remote sessions per month</li>
+          <li>Priority scheduling + one after‑hours slot/month</li>
+          <li>Shared notes & mini‑checklists for each topic</li>
+        </ul>
+        <div class="cta">
+          <a class="btn" href="booking.html">Go Premium</a>
+          <a class="btn secondary" href="mailto:seeleylake@406techservices.com?subject=Premium%20Coaching">Email Us</a>
+        </div>
+        <p class="note">After‑hours slot by appointment only; no rollover.</p>
+      </article>
+    </div>
+  </div>
+
+  <!-- Comparison table -->
+  <section class="section" aria-label="Compare options">
+    <div class="panel">
+      <div class="kicker">Compare at a glance</div>
+      <div class="tablewrap">
+        <table class="compare">
+          <thead><tr><th>Feature</th><th>Quick Session</th><th>Training Packs</th><th>In‑Home</th><th>Monthly</th><th>Premium</th></tr></thead>
+          <tbody>
+            <tr><td>Format</td><td>Remote</td><td>Remote</td><td>On‑site</td><td>Remote</td><td>Remote</td></tr>
+            <tr><td>Included time</td><td>1×60 min</td><td>3×60 or 5×60</td><td>1×60 min</td><td>2×45 min/mo</td><td>3×45 min/mo</td></tr>
+            <tr><td>Priority scheduling</td><td>—</td><td>—</td><td>—</td><td>Yes</td><td>Yes + after‑hours slot</td></tr>
+            <tr><td>Follow‑up notes</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
+            <tr><td>Expires</td><td>—</td><td>6 months</td><td>—</td><td>No rollover</td><td>No rollover</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note" style="margin-top:.6rem">All scheduling is subject to availability (first‑come, first‑served). After‑hours/weekends limited and by appointment.</p>
+    </div>
+  </section>
+
+  <!-- Not covered -->
+  <section class="section" aria-label="Not covered">
+    <div class="panel">
+      <h3>❌ Not Covered by Training/Tutoring</h3>
+      <ul class="xlist">
+        <li><span class="x">×</span><span>Major projects (data recovery, full network rebuilds, large Wi‑Fi installs or migrations)</span></li>
+        <li><span class="x">×</span><span>Hardware purchases or multi‑device setup beyond typical training scope</span></li>
+        <li><span class="x">×</span><span>Managed services or ongoing monitoring (see Residential Support Plans)</span></li>
+        <li><span class="x">×</span><span>Unlimited after‑hours — available only by appointment or via Premium monthly slot</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Policies -->
+  <section class="section" aria-label="Policies">
+    <div class="panel">
+      <h3>Policies & Fine Print</h3>
+      <p class="note"><strong>Availability & Scheduling:</strong> Sessions are scheduled around technician availability (M–F 9–5). Priority windows apply to Monthly/Premium plans; targets are not guarantees.</p>
+      <p class="note"><strong>Rescheduling:</strong> Please give 24 hours’ notice to avoid forfeiting a session. No‑shows are charged or deducted from your pack/plan.</p>
+      <p class="note"><strong>Packs & Plans:</strong> Packs expire in 6 months. Monthly plans renew on the 1st; no rollover of unused time; cancel anytime effective next month.</p>
+      <p class="note"><strong>Travel:</strong> In‑home training limited to our local service area; additional travel may incur a fee.</p>
+      <div class="cta" style="margin-top:.75rem">
+        <a class="btn" href="booking.html">Schedule Training</a>
+        <a class="btn secondary" href="mailto:seeleylake@406techservices.com">seeleylake@406techservices.com</a>
+        <a class="btn secondary" href="tel:14062098814">406‑209‑8814</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 406 Technical Services • Seeley Lake, Montana • 406‑209‑8814 • seeleylake@406techservices.com</p>
+  </footer>
+</body></html>
