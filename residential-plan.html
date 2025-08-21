@@ -3,72 +3,117 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Residential Support Plans | 406 Technical Services</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8fafc; }
+    :root{
+      --brand:#1f6feb; --ink:#0f172a; --muted:#555; --line:#ddd; --bg:#fff; --bg2:#f8fafc; --warn:#ea580c;
+    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: var(--bg2); color: var(--ink); }
     header, footer { background: #fff; padding: 1rem; text-align: center; border-bottom: 1px solid #ccc; }
     footer { border-top: 1px solid #ccc; margin-top: 2rem; }
-    .plans { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; padding: 2rem; }
-    .plan { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 1.5rem; flex: 1 1 280px; max-width: 320px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+    /* plan cards */
+    .plans { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; padding: 2rem 1rem; }
+    .plan { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; flex: 1 1 280px; max-width: 320px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
     .plan h2 { margin-top: 0; }
-    .price { font-size: 1.5rem; color: #1f6feb; font-weight: bold; }
-    ul { padding-left: 1.2rem; text-align:left; }
-    .note { font-size: 0.9rem; color: #555; margin-top: 1rem; }
+    .price { font-size: 1.5rem; color: var(--brand); font-weight: bold; }
+    ul { padding-left: 1.2rem; text-align:left; margin: .5rem 0; }
+    .note { font-size: 0.9rem; color: var(--muted); margin-top: 1rem; }
+    /* not covered box */
+    .not-covered-wrap { max-width: 1100px; margin: 0 auto; padding: 0 1rem 2rem; }
+    .not-covered { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.25rem; box-shadow: 0 4px 8px rgba(0,0,0,.04); }
+    .not-covered h3 { margin: 0 0 .5rem; display: flex; align-items: center; gap: .5rem; font-size: 1.1rem; }
+    .not-covered h3 .badge { display:inline-block; font-size:.8rem; color:#fff; background: var(--warn); padding:.1rem .5rem; border-radius: 999px; }
+    .xlist { list-style: none; padding: 0; margin: 0; display: grid; gap: .4rem; }
+    .xlist li { display: grid; grid-template-columns: 22px 1fr; align-items: start; gap: .5rem; }
+    .x { color: var(--warn); font-weight: 900; }
+    /* availability/fine print */
+    .fineprint { max-width: 1100px; margin: 0 auto; padding: 1rem; color: var(--muted); font-size: .95rem; }
+    .fineprint p { margin: .25rem 0; }
+    /* simple nav links in header */
+    nav a { color:#fff; text-decoration:underline; }
+    @media (prefers-color-scheme: dark) {
+      body{background:#0b1220; color:#e6eaf2}
+      header, footer{background:#0f172a; border-color:#1f2937}
+      .plan, .not-covered{background:#111827; border-color:#1f2937}
+      .note, .fineprint{color:#cbd5e1}
+      nav a{color:#bbdefb}
+    }
   </style>
 </head>
 <body>
   <header style="background: url('images/mountains.jpg') no-repeat center center; background-size: cover; color: white; padding: 1rem 0;">
     <img src="images/logo.png" alt="406 Technical Services" style="height:60px">
-    <h1>Residential Support Plans</h1>
-    <p>All services subject to technician availability</p>
-     <nav>
+    <h1 style="margin:.25rem 0 0">Residential Support Plans</h1>
+    <p style="margin:.25rem 0 0">All services subject to technician availability</p>
+    <nav>
       <div style="text-align: center; margin: 1rem 0;">
-  <a href="index.html">Home</a> |
-  <a href="services.html">Services</a> |
-  <a href="faq.html">FAQ</a> |
-  <a href="residential-plan.html">Residential Support Plans</a> |
-  <a href="booking.html">Appointment Booking</a> |
-  <a href="blog.html">Blog</a> |
-  <a href="testimonials.html">Testimonials</a> |
-  <a href="portfolio.html">Portfolio</a> |
-  <a href="contact.html">Contact</a>
-</div>
+        <a href="index.html">Home</a> |
+        <a href="services.html">Services</a> |
+        <a href="faq.html">FAQ</a> |
+        <a href="residential-plan.html" aria-current="page">Residential Support Plans</a> |
+        <a href="booking.html">Appointment Booking</a> |
+        <a href="blog.html">Blog</a> |
+        <a href="testimonials.html">Testimonials</a> |
+        <a href="portfolio.html">Portfolio</a> |
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
   </header>
 
-  <main class="plans">
-    <div class="plan">
-      <h2>Standard</h2>
+  <main class="plans" aria-label="Residential plan options">
+    <section class="plan" aria-labelledby="standard">
+      <h2 id="standard">Standard</h2>
       <div class="price">$50/month</div>
       <ul>
-        <li>1 in-home visit (1 hour)</li>
-        <li>Phone/text support (quick questions)</li>
-        <li>Scheduling target: 2–3 business days</li>
+        <li>1 in-home visit (up to 1 hour)</li>
+        <li>Phone/text support for quick questions</li>
+        <li>Scheduling target: 2–3 business days (subject to availability)</li>
       </ul>
-      <p class="note">Extra time: $75/hr. No rollover. Subject to availability.</p>
-    </div>
+      <p class="note">Extra time: <strong>$75/hr</strong>. No rollover.</p>
+    </section>
 
-    <div class="plan">
-      <h2>Plus</h2>
+    <section class="plan" aria-labelledby="plus">
+      <h2 id="plus">Plus <span class="note" style="font-weight:600;">(most popular)</span></h2>
       <div class="price">$99/month</div>
       <ul>
-        <li>2 in-home visits (1 hour each)</li>
-        <li>Priority scheduling (next business day target)</li>
+        <li>2 in-home visits (up to 1 hour each)</li>
+        <li>Priority scheduling (next business day target; subject to availability)</li>
         <li>Phone/text support included</li>
       </ul>
-      <p class="note">Extra time: $70/hr. Subject to availability.</p>
-    </div>
+      <p class="note">Extra time: <strong>$70/hr</strong>. No rollover.</p>
+    </section>
 
-    <div class="plan">
-      <h2>Premium</h2>
+    <section class="plan" aria-labelledby="premium">
+      <h2 id="premium">Premium</h2>
       <div class="price">$139/month</div>
       <ul>
-        <li>3 in-home visits (1 hour each)</li>
+        <li>3 in-home visits (up to 1 hour each)</li>
         <li>Priority scheduling</li>
         <li>One after-hours/weekend slot included (appointment only)</li>
         <li>Phone/text support included</li>
       </ul>
-      <p class="note">Extra time: $65/hr. After-hours $110/hr otherwise. Subject to availability.</p>
-    </div>
+      <p class="note">Extra time: <strong>$65/hr</strong>. After-hours otherwise <strong>$110/hr</strong>. No rollover.</p>
+    </section>
   </main>
+
+  <!-- Not Covered box (clear boundaries) -->
+  <section class="not-covered-wrap" aria-label="Items not covered under any plan">
+    <div class="not-covered">
+      <h3><span class="badge" aria-hidden="true">Important</span> ❌ Not Covered Under Any Plan</h3>
+      <ul class="xlist">
+        <li><span class="x">×</span><span>Major projects (network redesigns/rebuilds, large Wi‑Fi expansions, cloud/email migrations, or data recovery)</span></li>
+        <li><span class="x">×</span><span>Hardware purchases, replacements, or setup of brand‑new systems beyond normal support</span></li>
+        <li><span class="x">×</span><span>Ongoing training/tutoring beyond quick troubleshooting</span></li>
+        <li><span class="x">×</span><span>After‑hours/weekend service unless included in Premium or purchased separately</span></li>
+        <li><span class="x">×</span><span>Any work exceeding monthly visit/time limits (available at the plan’s hourly overage rate)</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Availability & fair‑use fine print (keeps you protected) -->
+  <section class="fineprint" aria-label="Availability and fair use">
+    <p><strong>Availability & Scheduling:</strong> All services are subject to technician availability. Standard: 2–3 business day scheduling target. Plus/Premium: next‑business‑day target (not guaranteed). After‑hours/weekend availability is limited and by appointment only.</p>
+    <p><strong>Fair Use:</strong> Plans are intended for routine residential support. Repeated/prolonged issues may be moved to a scheduled visit or billed hourly. Visits and included time do not roll over.</p>
+    <p><strong>Billing:</strong> Additional time beyond monthly limits is billed in 15‑minute increments at the plan’s overage rate.</p>
+  </section>
 
   <footer>
     <p>© 2025 406 Technical Services • Seeley Lake, Montana • 406‑209‑8814 • seeleylake@406techservices.com</p>
