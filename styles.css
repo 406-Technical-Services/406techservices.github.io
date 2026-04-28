@@ -14,3 +14,5 @@ body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,"Helvetica Neu
 .footer{padding:2rem 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);margin-top:2rem;}
 a.button{display:inline-block;text-align:center;text-decoration:none;border-radius:999px;padding:.75rem 1.1rem;font-weight:700;border:1px solid var(--brand);color:#fff;background:var(--brand);}
 a.button.secondary{background:#fff;color:var(--brand);}
+header a{color:#ffffff;}
+header a:hover{opacity:.85;text-decoration:none;}

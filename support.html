@@ -2,34 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a support request to 406 Technical Services. Describe your tech issue and we'll get back to you as soon as possible.">
   <title>Support Request - 406 Technical Services</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header style="background: url('images/mountains.jpg') no-repeat center center; background-size: cover; color: white; padding: 1rem 0;">
-    <div style="display: flex; align-items: center; max-width: 1200px; margin: 0 auto;">
+    <div style="display: flex; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
       <img src="images/logo.png" alt="406 Technical Services Logo" style="height: 60px; margin-right: 20px;">
       <h1 style="margin: 0;">406 Technical Services</h1>
     </div>
-    <div style="text-align: center; margin: 1rem 0;">
-      <a href="index.html">Home</a> |
-      <a href="services.html">Services</a> |
-      <a href="faq.html">FAQ</a> |
-      <a href="support.html">Support Request</a> |
-      <a href="booking.html">Appointment Booking</a> |
-      <a href="blog.html">Blog</a> |
-      <a href="testimonials.html">Testimonials</a> |
-      <a href="portfolio.html">Portfolio</a> |
-      <a href="contact.html">Contact</a>
-    </div>
+    <nav>
+      <div style="text-align: center; margin: 1rem 0;">
+        <a href="index.html">Home</a> |
+        <a href="services.html">Services</a> |
+        <a href="faq.html">FAQ</a> |
+        <a href="residential-plan.html">Residential Support Plans</a> |
+        <a href="training-tutoring.html">Training/Tutoring Plans</a> |
+        <a href="booking.html">Appointment Booking</a> |
+        <a href="blog.html">Blog</a> |
+        <a href="testimonials.html">Testimonials</a> |
+        <a href="portfolio.html">Portfolio</a> |
+        <a href="about.html">About</a> |
+        <a href="learn-ai.html">Learn AI</a> |
+        <a href="support.html">Support Request</a> |
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
   </header>
 
   <main style="max-width: 960px; margin: 2rem auto; color: #fff; background-color: #001f3f; padding: 2rem; border-radius: 8px;">
     <h2>Support Request</h2>
     <form action="https://formsubmit.co/support@406techservices.com" method="POST">
-      <label>Your Name:<br><input type="text" name="name" required></label><br><br>
-      <label>Email:<br><input type="email" name="email" required></label><br><br>
-      <label>Issue Description:<br><textarea name="issue" rows="5" required></textarea></label><br><br>
+      <label for="name">Your Name:<br><input id="name" type="text" name="name" required></label><br><br>
+      <label for="email">Email:<br><input id="email" type="email" name="email" required></label><br><br>
+      <label for="issue">Issue Description:<br><textarea id="issue" name="issue" rows="5" required></textarea></label><br><br>
       <input type="text" name="_honey" style="display:none">
       <input type="hidden" name="_next" value="https://www.406techservices.com/thank-you.html">
       <button type="submit">Submit Request</button>
@@ -37,7 +46,7 @@
   </main>
 
   <footer style="background-color: #001733; color: white; text-align: center; padding: 1rem 0;">
-    <p>&copy; 2025 406 Technical Services</p>
+    <p>&copy; 2026 406 Technical Services</p>
   </footer>
 </body>
 </html>
