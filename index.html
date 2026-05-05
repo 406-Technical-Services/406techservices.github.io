@@ -3,10 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="406 Technical Services — expert tech consulting and support for businesses and households in Montana and beyond. Connectivity, AI, cloud, cybersecurity, and more.">
+  <meta name="description" content="406 Technical Services — vendor-neutral tech consulting for Montana businesses and homes. Connectivity, cloud, AI, cybersecurity, and local support backed by a network of 220+ providers.">
   <title>406 Technical Services</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --brand: #1f6feb;
+      --ink: #0f172a;
+      --muted: #475569;
+      --bg: #ffffff;
+      --bg2: #f8fafc;
+      --line: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+
+    .hero {
+      max-width: 960px;
+      margin: 2.5rem auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin: 0 0 1rem;
+      color: var(--ink);
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 680px;
+      margin: 0 auto 1.75rem;
+      line-height: 1.65;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--brand);
+      color: #fff;
+      text-decoration: none;
+      padding: .75rem 1.75rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .btn:hover { opacity: .88; }
+
+    .tracks {
+      max-width: 960px;
+      margin: 0 auto 2.5rem;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .track {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem;
+    }
+    .track h3 {
+      margin: 0 0 .75rem;
+      color: var(--brand);
+      font-size: 1.1rem;
+    }
+    .track ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: var(--ink);
+      line-height: 1.75;
+    }
+
+    .why {
+      background: var(--bg2);
+      padding: 2rem 1rem;
+    }
+    .why-inner {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .why h2 {
+      margin: 0 0 1.25rem;
+      font-size: 1.4rem;
+      color: var(--ink);
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+    }
+    .why-item strong {
+      display: block;
+      margin-bottom: .3rem;
+      color: var(--ink);
+    }
+    .why-item {
+      color: var(--muted);
+      font-size: .97rem;
+      line-height: 1.55;
+    }
+
+    .cta-bar {
+      background: var(--brand);
+      color: #fff;
+      text-align: center;
+      padding: 2.75rem 1rem;
+    }
+    .cta-bar h2 {
+      margin: 0 0 .5rem;
+      font-size: 1.5rem;
+    }
+    .cta-bar p {
+      margin: 0 0 1.5rem;
+      opacity: .9;
+    }
+    .btn-white {
+      display: inline-block;
+      background: #fff;
+      color: var(--brand);
+      text-decoration: none;
+      padding: .75rem 1.75rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .btn-white:hover { opacity: .9; }
+
+    @media (max-width: 640px) {
+      .tracks { grid-template-columns: 1fr; }
+      .hero h2 { font-size: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
   <header style="background: url('images/mountains.jpg') no-repeat center center; background-size: cover; color: white; padding: 1rem 0;">
@@ -33,23 +160,67 @@
     </nav>
   </header>
 
-  <main style="max-width: 960px; margin: 2rem auto; color: #fff; background-color: #001f3f; padding: 2rem; border-radius: 8px;">
-    <section>
-      <h2>Welcome to 406 Technical Services</h2>
-      <p>
-        At 406 Technical Services, we help businesses and households make confident, informed technology choices — from fixing Wi-Fi to adopting cutting-edge AI tools. Our goal is simple: make tech work better for you.
-      </p>
-      <p>
-        Founded by telecom veteran Steve Akers and powered by OTG Consulting's 220+ provider network, we advise across every major IT swim lane — including cloud, connectivity, cybersecurity, AI, automation, voice, and IoT.
-      </p>
-      <p>
-        We're especially excited about the power of AI and automation to transform how small businesses operate. If you're curious about what's possible, let's talk.
-      </p>
-    </section>
-  </main>
+  <section class="hero">
+    <h2>Local expertise. National resources. No vendor pressure.</h2>
+    <p>406 Technical Services helps Montana businesses and households make confident technology decisions — from Wi-Fi and PCs to cloud, cybersecurity, and AI. Founded by telecom veteran Steve Akers and backed by a network of 220+ vetted providers.</p>
+    <a href="booking.html" class="btn">Book a Free Consult</a>
+  </section>
+
+  <section class="tracks" aria-label="Service tracks">
+    <div class="track">
+      <h3>For Businesses</h3>
+      <ul>
+        <li>Vendor-neutral technology advisory</li>
+        <li>Connectivity, cloud, cybersecurity, UCaaS/CCaaS</li>
+        <li>AI and automation consulting</li>
+        <li>Network assessments (Meraki, Fortinet)</li>
+        <li>Multi-vendor quoting through OTG — free to you</li>
+      </ul>
+    </div>
+    <div class="track">
+      <h3>For Homes</h3>
+      <ul>
+        <li>Wi-Fi optimization and home network setup</li>
+        <li>PC/Mac tune-ups and troubleshooting</li>
+        <li>Starlink installation and optimization</li>
+        <li>Smart TV and streaming setup</li>
+        <li>Hands-on help with AI tools like ChatGPT</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="why-inner">
+      <h2>Why 406 Technical Services?</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <strong>No vendor pressure</strong>
+          Every recommendation is based on your needs, not our margins.
+        </div>
+        <div class="why-item">
+          <strong>One point of contact</strong>
+          You deal with Steve. We coordinate everything else.
+        </div>
+        <div class="why-item">
+          <strong>National-scale resources</strong>
+          OTG Consulting gives us access to 220+ providers across every IT swim lane.
+        </div>
+        <div class="why-item">
+          <strong>Real telecom background</strong>
+          20+ years at Lumen, Sprint, Nextel, and Clearwire — not a generalist shop.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-bar">
+    <h2>Not sure where to start?</h2>
+    <p>A free 30-minute consult costs you nothing and gives you a clear next step.</p>
+    <a href="booking.html" class="btn-white">Schedule a Free Consult</a>
+  </section>
 
   <footer style="background-color: #001733; color: white; text-align: center; padding: 1rem 0;">
-    <p>&copy; 2026 406 Technical Services</p>
+    <p>&copy; 2026 406 Technical Services &nbsp;|&nbsp; steve@406techservices.com &nbsp;|&nbsp; 406-209-8814</p>
   </footer>
 </body>
 </html>
