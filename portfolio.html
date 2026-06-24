@@ -3,10 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Past work and case studies from 406 Technical Services — Wi-Fi setups, Starlink installs, PC tune-ups, and AI automation projects in Montana.">
-  <title>Portfolio - 406 Technical Services</title>
+  <meta name="description" content="Case studies from 406 Technical Services — rural Wi-Fi mesh, Starlink installs, PCI compliance, cloud monitoring, and managed IT in Montana.">
+  <title>Portfolio — 406 Technical Services</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --brand: #1f6feb;
+      --ink: #0f172a;
+      --muted: #475569;
+      --bg: #ffffff;
+      --bg2: #f8fafc;
+      --line: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+
+    .page-header {
+      max-width: 960px;
+      margin: 2.5rem auto 2rem;
+      padding: 0 1rem;
+    }
+    .page-header h2 {
+      font-size: 2rem;
+      margin: 0 0 .5rem;
+      color: var(--ink);
+    }
+    .page-header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .section {
+      max-width: 960px;
+      margin: 0 auto 3rem;
+      padding: 0 1rem;
+    }
+
+    .case-card {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .case-card.featured {
+      border-left: 4px solid var(--brand);
+    }
+
+    .case-tag {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      color: var(--brand);
+      background: #e8f1ff;
+      padding: .25rem .7rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    .case-card h3 {
+      margin: 0 0 .3rem;
+      font-size: 1.35rem;
+      color: var(--ink);
+    }
+    .case-card .subtitle {
+      color: var(--muted);
+      font-size: .95rem;
+      margin: 0 0 1.5rem;
+    }
+
+    .pwr {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 640px) { .pwr { grid-template-columns: 1fr; } }
+
+    .pwr-block h4 {
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--muted);
+      margin: 0 0 .4rem;
+    }
+    .pwr-block p {
+      margin: 0;
+      color: var(--ink);
+      font-size: .95rem;
+      line-height: 1.6;
+    }
+
+    .metrics {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+    }
+    .metric .num {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--brand);
+      line-height: 1.1;
+    }
+    .metric .label {
+      font-size: .8rem;
+      color: var(--muted);
+    }
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 640px) { .case-grid { grid-template-columns: 1fr; } }
+    .case-grid .case-card { margin-bottom: 0; }
+
+    .case-grid .pwr { grid-template-columns: 1fr 1fr; }
+    @media (max-width: 640px) { .case-grid .pwr { grid-template-columns: 1fr; } }
+
+    .cta-bar {
+      background: var(--brand);
+      color: #fff;
+      text-align: center;
+      padding: 2.75rem 1rem;
+    }
+    .cta-bar h2 { margin: 0 0 .5rem; font-size: 1.5rem; }
+    .cta-bar p { margin: 0 0 1.5rem; opacity: .9; }
+    .btn-white {
+      display: inline-block;
+      background: #fff;
+      color: var(--brand);
+      text-decoration: none;
+      padding: .75rem 1.75rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .btn-white:hover { opacity: .9; }
+  </style>
 </head>
 <body>
   <header style="background: url('images/mountains.jpg') no-repeat center center; background-size: cover; color: white; padding: 1rem 0;">
@@ -33,18 +175,117 @@
     </nav>
   </header>
 
-  <main style="max-width: 960px; margin: 2rem auto; background-color: #ffffff; color: #001733; padding: 2rem; border-radius: 8px;">
-    <h2>Past Work</h2>
-    <ul>
-      <li>Small business wireless setup – Missoula, MT</li>
-      <li>Remote PC tuning and cleanup – Helena, MT</li>
-      <li>Starlink installation for rural home – Seeley Lake, MT</li>
-      <li>Integrated ChatGPT and RPA tools for a small business productivity system</li>
-    </ul>
-  </main>
+  <div class="page-header">
+    <h2>Work We've Done</h2>
+    <p>Real projects, real results — from 9-cabin rural resorts to restaurant network security to nonprofit managed IT.</p>
+  </div>
+
+  <div class="section">
+
+    <!-- Swan Lake -->
+    <div class="case-card featured">
+      <span class="case-tag">Wi-Fi · Cloud Monitoring · Starlink</span>
+      <h3>Rural Resort Mesh Network Rebuild</h3>
+      <p class="subtitle">9-building property, zero cellular coverage, safety-critical connectivity — Swan Lake, MT</p>
+
+      <div class="pwr">
+        <div class="pwr-block">
+          <h4>Problem</h4>
+          <p>A 9-cabin resort in a cell-dead zone had Starlink signal so degraded that guests in the farthest cabins were getting 6 Mbps and couldn't reliably reach emergency services. The original mesh topology had too many wireless hops, and the owner had zero visibility into whether the network was up or down.</p>
+        </div>
+        <div class="pwr-block">
+          <h4>Work</h4>
+          <p>Ran a professional wireless survey with NetSpot to map signal propagation across all 9 buildings. Redesigned the topology to a single-hub architecture and relocated the primary Starlink dish to eliminate multi-hop signal loss. Backhauled all 9 buildings wirelessly across three coverage zones. Then built a custom cloud monitoring service — Python, Starlink gRPC API, Oracle Cloud — that polls dish health every 60 seconds, tracks per-cabin reachability, and auto-sends alerts and a branded monthly PDF report.</p>
+        </div>
+        <div class="pwr-block">
+          <h4>Result</h4>
+          <p>All 9 cabins now deliver 25–268 Mbps. Guests can reach emergency services from any building on the property. The owner gets automated uptime alerts and a monthly report without doing anything. Completed in two site visits.</p>
+        </div>
+      </div>
+
+      <div class="metrics">
+        <div class="metric"><span class="num">9</span><span class="label">buildings covered</span></div>
+        <div class="metric"><span class="num">6→268</span><span class="label">Mbps improvement</span></div>
+        <div class="metric"><span class="num">2</span><span class="label">site visits to complete</span></div>
+        <div class="metric"><span class="num">24/7</span><span class="label">automated cloud monitoring</span></div>
+      </div>
+    </div>
+
+    <!-- Chicken Coop -->
+    <div class="case-card featured">
+      <span class="case-tag">Network Security · Cabling · PCI Compliance</span>
+      <h3>Restaurant & Casino Network Audit</h3>
+      <p class="subtitle">No documentation, mystery cabling, 13 cameras offline, and a PCI compliance gap — Seeley Lake, MT</p>
+
+      <div class="pwr">
+        <div class="pwr-block">
+          <h4>Problem</h4>
+          <p>A busy restaurant, bar, and casino had no IT documentation, completely unidentified cabling, all 13 security cameras offline or misaligned, POS systems running on an expired support contract, and payment and guest traffic on the same unsegmented network — a PCI compliance exposure.</p>
+        </div>
+        <div class="pwr-block">
+          <h4>Work</h4>
+          <p>Full cabling audit with as-built documentation. Identified and escalated a PCI compliance gap through the payment processor. Repaired all 13 cameras — bad crimps, realigned a P2P wireless bridge, replaced a water-damaged outdoor bridge unit. Deployed a UPS mid-engagement during a live power outage to keep POS running. Designed a 6-VLAN SonicWall architecture for full PCI-compliant segmentation: Surveillance, POS, Office, Guest, Entertainment, and Management.</p>
+        </div>
+        <div class="pwr-block">
+          <h4>Result</h4>
+          <p>All cameras live and documented. PCI exposure identified and remediation engaged through the payment processor. POS systems protected by battery backup. A 6-VLAN network redesign is staged for the next maintenance window.</p>
+        </div>
+      </div>
+
+      <div class="metrics">
+        <div class="metric"><span class="num">13</span><span class="label">cameras restored</span></div>
+        <div class="metric"><span class="num">1</span><span class="label">PCI gap escalated</span></div>
+        <div class="metric"><span class="num">6</span><span class="label">VLANs in security redesign</span></div>
+        <div class="metric"><span class="num">5</span><span class="label">POS terminals protected</span></div>
+      </div>
+    </div>
+
+    <!-- Smaller case studies grid -->
+    <div class="case-grid">
+
+      <div class="case-card">
+        <span class="case-tag">Managed IT · Microsoft 365</span>
+        <h3>Nonprofit Managed IT</h3>
+        <p class="subtitle">Sole MSP since mid-2024 — Seeley Lake, MT</p>
+        <div class="pwr">
+          <div class="pwr-block">
+            <h4>Work</h4>
+            <p>Configured 9 Exchange Online room mailboxes via PowerShell — booking policies, delegation, subject retention, calendar permissions. Ongoing Microsoft 365 tenant admin, A/V support, and streaming setup. Monthly service reporting.</p>
+          </div>
+          <div class="pwr-block">
+            <h4>Result</h4>
+            <p>Reliable room scheduling across 9 spaces. One point of contact for all IT — staff calls Steve, Steve handles it. Organization no longer manages any vendor relationships directly.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">PC Support · QuickBooks · M365</span>
+        <h3>PC Audit &amp; QuickBooks Recovery</h3>
+        <p class="subtitle">Same-day diagnosis and recovery — Seeley Lake, MT</p>
+        <div class="pwr">
+          <div class="pwr-block">
+            <h4>Work</h4>
+            <p>Audited 3 workstations. Found Microsoft 365 licensing lapsed across all three. Diagnosed a QuickBooks multi-user failure caused by conflicting software versions and stale hosting services. Removed malware. Resolved a payroll submission error with Intuit.</p>
+          </div>
+          <div class="pwr-block">
+            <h4>Result</h4>
+            <p>QuickBooks multi-user restored, M365 licensing corrected, malware removed, and payroll back on track — all in a single visit. Business back to normal the same day.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="cta-bar">
+    <h2>Have a project in mind?</h2>
+    <p>Free 30-minute consult — no commitment, no sales pitch.</p>
+    <a href="booking.html" class="btn-white">Book a Free Consult</a>
+  </section>
 
   <footer style="background-color: #001733; color: white; text-align: center; padding: 1rem 0;">
-    <p>&copy; 2026 406 Technical Services</p>
+    <p>&copy; 2026 406 Technical Services &nbsp;|&nbsp; steve@406techservices.com &nbsp;|&nbsp; 406-209-8814</p>
   </footer>
 </body>
 </html>
