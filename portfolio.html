@@ -177,7 +177,7 @@
 
   <div class="page-header">
     <h2>Work We've Done</h2>
-    <p>Real projects, real results — from 9-cabin rural resorts to restaurant network security to nonprofit managed IT.</p>
+    <p>Real projects, real results — from 9-building rural resorts to restaurant network security to nonprofit managed IT.</p>
   </div>
 
   <div class="section">
@@ -191,15 +191,15 @@
       <div class="pwr">
         <div class="pwr-block">
           <h4>Problem</h4>
-          <p>A 9-cabin resort in a cell-dead zone had Starlink signal so degraded that guests in the farthest cabins were getting 6 Mbps and couldn't reliably reach emergency services. The original mesh topology had too many wireless hops, and the owner had zero visibility into whether the network was up or down.</p>
+          <p>A 9-building resort in a cell-dead zone had Starlink signal so degraded that the worst cabins were measuring as low as 6 Mbps — and guests couldn't reliably reach emergency services. The original mesh topology spread across multiple wireless hops with the dish misaligned, and the owner had zero visibility into whether the network was up or down.</p>
         </div>
         <div class="pwr-block">
           <h4>Work</h4>
-          <p>Ran a professional wireless survey with NetSpot to map signal propagation across all 9 buildings. Redesigned the topology to a single-hub architecture and relocated the primary Starlink dish to eliminate multi-hop signal loss. Backhauled all 9 buildings wirelessly across three coverage zones. Then built a custom cloud monitoring service — Python, Starlink gRPC API, Oracle Cloud — that polls dish health every 60 seconds, tracks per-cabin reachability, and auto-sends alerts and a branded monthly PDF report.</p>
+          <p>Ran a professional wireless survey with NetSpot across all 9 buildings. Relocated the primary Starlink dish to a central hub (Pump House) with clear line of sight to every building, eliminating relay hops. All 9 buildings now backhaul wirelessly to a single hub — no multi-hop signal degradation. Then built a custom cloud monitoring service in Python that polls dish health every 60 seconds, tracks per-building reachability, and auto-sends alerts and a branded monthly PDF report.</p>
         </div>
         <div class="pwr-block">
           <h4>Result</h4>
-          <p>All 9 cabins now deliver 25–268 Mbps. Guests can reach emergency services from any building on the property. The owner gets automated uptime alerts and a monthly report without doing anything. Completed in two site visits.</p>
+          <p>All 9 buildings now deliver 25–268 Mbps. Guests can reach emergency services from anywhere on the property. The owner receives automated alerts and a monthly uptime report without doing anything. Completed in two site visits.</p>
         </div>
       </div>
 
@@ -214,29 +214,29 @@
     <!-- Chicken Coop -->
     <div class="case-card featured">
       <span class="case-tag">Network Security · Cabling · PCI Compliance</span>
-      <h3>Restaurant & Casino Network Audit</h3>
-      <p class="subtitle">No documentation, mystery cabling, 13 cameras offline, and a PCI compliance gap — Seeley Lake, MT</p>
+      <h3>Restaurant &amp; Casino Network Audit</h3>
+      <p class="subtitle">No documentation, unidentified cabling, cameras offline, and a PCI compliance gap — Seeley Lake, MT</p>
 
       <div class="pwr">
         <div class="pwr-block">
           <h4>Problem</h4>
-          <p>A busy restaurant, bar, and casino had no IT documentation, completely unidentified cabling, all 13 security cameras offline or misaligned, POS systems running on an expired support contract, and payment and guest traffic on the same unsegmented network — a PCI compliance exposure.</p>
+          <p>A busy restaurant, bar, and casino had no IT documentation, completely unidentified cabling, multiple security cameras offline or misaligned, POS hardware running legacy software with no active support path, and payment systems exposed by a PCI compliance gap — old card readers were storing full credit card numbers.</p>
         </div>
         <div class="pwr-block">
           <h4>Work</h4>
-          <p>Full cabling audit with as-built documentation. Identified and escalated a PCI compliance gap through the payment processor. Repaired all 13 cameras — bad crimps, realigned a P2P wireless bridge, replaced a water-damaged outdoor bridge unit. Deployed a UPS mid-engagement during a live power outage to keep POS running. Designed a 6-VLAN SonicWall architecture for full PCI-compliant segmentation: Surveillance, POS, Office, Guest, Entertainment, and Management.</p>
+          <p>Full cabling audit with as-built documentation. Identified the PCI compliance gap and notified the client. Repaired offline cameras — realigned a dislodged P2P wireless bridge and identified a water-damaged outdoor bridge unit for replacement. Deployed a UPS during a live power outage mid-engagement to keep POS running. Designed a 6-VLAN SonicWall architecture for full network segmentation: Surveillance, POS, ATM, Office, Guest, and Gaming.</p>
         </div>
         <div class="pwr-block">
           <h4>Result</h4>
-          <p>All cameras live and documented. PCI exposure identified and remediation engaged through the payment processor. POS systems protected by battery backup. A 6-VLAN network redesign is staged for the next maintenance window.</p>
+          <p>Cameras back online, cabling documented, PCI exposure identified and reported to the client. POS kept alive during a live power outage. A 6-VLAN network redesign is staged for the next maintenance window.</p>
         </div>
       </div>
 
       <div class="metrics">
-        <div class="metric"><span class="num">13</span><span class="label">cameras restored</span></div>
-        <div class="metric"><span class="num">1</span><span class="label">PCI gap escalated</span></div>
+        <div class="metric"><span class="num">13</span><span class="label">cameras documented</span></div>
+        <div class="metric"><span class="num">1</span><span class="label">PCI gap identified</span></div>
         <div class="metric"><span class="num">6</span><span class="label">VLANs in security redesign</span></div>
-        <div class="metric"><span class="num">5</span><span class="label">POS terminals protected</span></div>
+        <div class="metric"><span class="num">5</span><span class="label">POS terminals audited</span></div>
       </div>
     </div>
 
@@ -250,11 +250,11 @@
         <div class="pwr">
           <div class="pwr-block">
             <h4>Work</h4>
-            <p>Configured 9 Exchange Online room mailboxes via PowerShell — booking policies, delegation, subject retention, calendar permissions. Ongoing Microsoft 365 tenant admin, A/V support, and streaming setup. Monthly service reporting.</p>
+            <p>Configured 9 Exchange Online room mailboxes via PowerShell — booking policies, delegation, subject retention, calendar permissions. Ongoing Microsoft 365 tenant admin, A/V support, and streaming setup. Monthly service reporting to leadership.</p>
           </div>
           <div class="pwr-block">
             <h4>Result</h4>
-            <p>Reliable room scheduling across 9 spaces. One point of contact for all IT — staff calls Steve, Steve handles it. Organization no longer manages any vendor relationships directly.</p>
+            <p>Reliable room scheduling across 9 spaces. One point of contact for all IT — staff calls Steve, Steve handles it.</p>
           </div>
         </div>
       </div>
@@ -262,15 +262,31 @@
       <div class="case-card">
         <span class="case-tag">PC Support · QuickBooks · M365</span>
         <h3>PC Audit &amp; QuickBooks Recovery</h3>
-        <p class="subtitle">Same-day diagnosis and recovery — Seeley Lake, MT</p>
+        <p class="subtitle">Multi-visit audit and emergency recovery — Seeley Lake, MT</p>
         <div class="pwr">
           <div class="pwr-block">
             <h4>Work</h4>
-            <p>Audited 3 workstations. Found Microsoft 365 licensing lapsed across all three. Diagnosed a QuickBooks multi-user failure caused by conflicting software versions and stale hosting services. Removed malware. Resolved a payroll submission error with Intuit.</p>
+            <p>Audited 3 workstations. Found Microsoft 365 licensing lapsed across all three. Diagnosed a QuickBooks multi-user failure caused by conflicting software versions and stale hosting services across machines. Resolved a payroll submission error with Intuit.</p>
           </div>
           <div class="pwr-block">
             <h4>Result</h4>
-            <p>QuickBooks multi-user restored, M365 licensing corrected, malware removed, and payroll back on track — all in a single visit. Business back to normal the same day.</p>
+            <p>QuickBooks multi-user restored, M365 licensing corrected, and payroll back on track. Business back to normal the same day as the recovery visit.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <span class="case-tag">Starlink · Residential</span>
+        <h3>Starlink Residential Install</h3>
+        <p class="subtitle">WISP replacement, same-day activation — Seeley Lake, MT</p>
+        <div class="pwr">
+          <div class="pwr-block">
+            <h4>Work</h4>
+            <p>Client's WISP service had degraded to 4 Mbps. Diagnosed the failing ISP on the first visit, ordered and activated Starlink the same day. Mounted the dish at the gable-end peak to stay above Seeley Lake's heavy snow accumulation. Set up the account with 406TS as admin for ongoing support.</p>
+          </div>
+          <div class="pwr-block">
+            <h4>Result</h4>
+            <p>Starlink active and reliable. Client went from a degraded 4 Mbps WISP to a working broadband connection — ordered, installed, and paid in full in under two weeks.</p>
           </div>
         </div>
       </div>
